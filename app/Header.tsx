@@ -13,6 +13,9 @@ function Header({}: Props) {
         <div className='flex-none'>
           <ul className='menu menu-horizontal px-1'>
             <li>
+              <Link href={'/flex-images'}>Flex-Images</Link>
+            </li>
+            <li>
               <Link href={'/bg-mask'}>Bg-Mask</Link>
             </li>
             <li>
@@ -23,6 +26,9 @@ function Header({}: Props) {
             </li>
             <li>
               <Link href={'/my-poly-mask'}>MyPolyMask</Link>
+            </li>
+            <li>
+              <Link href={'/svgs'}>SVGs</Link>
             </li>
             <li>
               <Link href={'/multi-poly'}>Multi-poly</Link>

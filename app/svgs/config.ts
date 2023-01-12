@@ -6,15 +6,13 @@ import { ISourceOptions } from 'tsparticles-engine';
 export const particlesOptions = {
   name: 'Polygon Mask',
   fullScreen: {
-    enable: false,
+    enable: true,
     zIndex: -1, // 0 is default but this was configured from template
   },
   style: {
     position: 'absolute', // think abs is default
     backgroundColor: 'pink', // doesnt work, prob tro do with z-indexes
     padding: '1rem', //works 
-    top: '0',
-    left: '0',
     // height: '15rem',
     // width: '15rem',
   },
@@ -133,12 +131,8 @@ export const particlesOptions = {
     type: 'inline',
     url: 'owl.svg',
     // url: 'deer.svg',
-    // url: 'deer-percent.svg',
     // url: 'https://particles.js.org/images/smalldeer.svg',
-    // url: './assets/svg/avatar.svg',
-    // url: 'assets/svg/avatar.svg',
     // url: 'animals2.svg',
-    // url: 'lion.svg',
     // url: 'deer2.svg',
     // url: 'cat.svg',
     // url: 'tiger.svg',

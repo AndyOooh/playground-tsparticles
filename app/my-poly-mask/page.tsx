@@ -2,10 +2,10 @@
 
 import { useCallback } from 'react';
 
-import { loadFull } from "tsparticles";
-import Particles from "react-particles";
-import type { Engine, ISourceOptions } from "tsparticles-engine";
-import { loadPolygonMaskPlugin } from "tsparticles-plugin-polygon-mask";
+import { loadFull } from 'tsparticles';
+import Particles from 'react-particles';
+import type { Engine, ISourceOptions } from 'tsparticles-engine';
+import { loadPolygonMaskPlugin } from 'tsparticles-plugin-polygon-mask';
 
 import { particlesOptions } from './config';
 import GlassCard from '../components/GlassCard';
@@ -17,12 +17,11 @@ function Deer() {
   }, []);
 
   return (
-    <div>
-      {/* <GlassCard /> */}
-      {/* <h1>Helloo</h1> */}
+    <>
+      {/* <div className='w-80 h-80 backdrop-blur-0 border-2 border-secondary flex justify-center items-center'> */}
       <Particles options={particlesOptions as ISourceOptions} init={particlesInit} />
-      {/* <Particles id="tsparticles" options={particlesOptions as ISourceOptions} init={particlesInit} /> */}
-    </div>
+      {/* </div> */}
+    </>
   );
 }
 
